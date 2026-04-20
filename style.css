@@ -210,3 +210,14 @@ th {
     color: #999;
     padding: 30px;
 }
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f5c6cb;
+    }
