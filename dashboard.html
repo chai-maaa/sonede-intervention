@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONEDE - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div>
+                <h1> SONEDE - Gestion des Interventions</h1>
+                <p style="color: #666; margin-top: 5px;" id="stats">Chargement...</p>
+            </div>
+            <button onclick="logout()" class="logout-btn"> Déconnexion</button>
+        </div>
+        
+        <div class="add-card">
+            <h3> Ajouter une nouvelle intervention</h3>
+            <div class="add-form">
+                <input type="text" id="interventionDesc" placeholder="Description de l'intervention (ex: Fuite d'eau rue Habib)">
+                <button onclick="addIntervention()">Ajouter</button>
+            </div>
+        </div>
+        
+        <div class="list-card">
+            <h3>Liste des interventions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Technicien</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="interventionsTable">
+                    <tr class="empty-row"><td colspan="5">Chargement...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

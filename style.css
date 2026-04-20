@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Page Login */
+.login-page {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.logo h1 {
+    color: #1e3c72;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.forgot-link {
+    color: #2a5298;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Page Dashboard */
+.dashboard-page {
+    background: #f5f7fa;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    color: #1e3c72;
+    font-size: 24px;
+}
+
+.logout-btn {
+    background: #dc3545;
+    padding: 8px 20px;
+    width: auto;
+    margin: 0;
+}
+
+.add-card, .list-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.add-card h3, .list-card h3 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.add-form {
+    display: flex;
+    gap: 15px;
+}
+
+.add-form input {
+    flex: 1;
+    margin: 0;
+}
+
+.add-form button {
+    width: auto;
+    padding: 12px 30px;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background: #f5f7fa;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-progress {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.status-done {
+    background: #d4edda;
+    color: #155724;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    margin: 0 3px;
+    width: auto;
+    font-size: 12px;
+    background: #6c757d;
+}
+
+.action-btn:hover {
+    transform: none;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.stat-badge {
+    background: #1e3c72;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.empty-row td {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+}
